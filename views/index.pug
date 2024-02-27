@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    <form id="gameForm" action="./check" method="get">
+        <fieldset>
+        <legend>Choissiez une attaque :</legend>
+
+        <div>
+            <input type="radio" id="huey" name="userResponse" value="0" checked />
+            <label for="huey">Pierre</label>
+        </div>
+
+        <div>
+            <input type="radio" id="dewey" name="userResponse" value="1" />
+            <label for="dewey">Feuille</label>
+        </div>
+
+        <div>
+            <input type="radio" id="louie" name="userResponse" value="2" />
+            <label for="louie">Ciseaux</label>
+        </div>
+        </fieldset>
+
+        <button type="submit">Envoyer</button>
+    </form>
